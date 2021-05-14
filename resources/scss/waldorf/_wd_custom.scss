@@ -991,7 +991,7 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu>li>ul.collapse>li ul.nav-
 
 .page-home .widget_katalog .cmp-product-thumb--grid:before {
 	content:" ";
-	background-image:url(https://trinidub.de/wd/images/background_frame_white_03.png)!important;
+	background-image:url(https://trinidub.de/wd/images/background_frame_white_05.png)!important;
 	background-size:100% 100%;
 	position:absolute;
 	pointer-events:none;
@@ -1410,6 +1410,72 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu>li>ul.collapse>li ul.nav-
 	background-color:transparent;
 }
 
+@media(max-width:992px) {
+.cmp-product-thumb:before {
+	content:" ";
+	background-image:url(https://trinidub.de/wd/images/background_frame_white_02.png);
+	background-size:100% 100%;
+	position:absolute;
+	pointer-events:none;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index:9;
+	display:block;
+	opacity:1;
+	background-color:transparent;
+	
+}
+
+.mobile-width-button{
+	padding-bottom:18px;	
+}
+.cmp-product-thumb--grid:before {
+	content:" ";
+	background-image:url(https://trinidub.de/wd/images/background_frame_white_02.png);
+	background-size:100% 100%;
+	position:absolute;
+	pointer-events:none;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index:9;
+	display:block;
+	opacity:1;
+	background-color:transparent;
+}
+
+.cmp-product-thumb > div:last-child{
+	bottom: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+}
+@media(max-width:992px) {
+	.cmp-product-thumb:before {
+		display: none;
+	}
+	
+	.mobile-width-button{
+		padding:10px 10px 8px 10px;	
+
+	}
+	.cmp-product-thumb--grid:before {
+		display: none;
+	}
+	
+	.cmp-product-thumb > div:last-child{
+		bottom: 0px;
+		position: inherit;
+		width: 100%;
+	}
+	
+	}
+
+
 .widget_topseller .cmp-product-thumb--grid:before {
 	content:" ";
 	background-image:url(https://trinidub.de/wd/images/background_frame_white_03.png);
@@ -1596,10 +1662,6 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu>li>ul.collapse>li ul.nav-
 	color:#fff;
 }
 
-@media(min-width:992px) {
-
-}
-
 /* Kategorieseiten */
 .category-description{
 width:100% !important;
@@ -1642,6 +1704,35 @@ margin: 0 auto;
 	color:#b92a38!important;
 }
 
+
+
+/* Category Text weiterlesen */
+
+.weiterlesen{
+	float:right;
+	margin-top:-12px;
+	margin-bottom:20px;
+}
+@media(max-width:767px) {
+	.weiterlesen{
+		background:white;
+		color:#b92a38 !important;
+		border:1px solid #b92a38 !important;
+	}
+	.weiterlesen:hover{
+		background:#b92a38;
+		color: white !important;
+		border-color:white;
+	}
+}
+
+.weiterlesen .fa-chevron-right:before {
+    content: "\f054";
+    font-size: 16px !important;
+}
+.widget_kat_description_2 .weiterlesen{
+	display: none;
+}
 /* categoriegrid */
 
 .categoriegrid {
@@ -2185,6 +2276,11 @@ div[id^=n2goForm] {
 
 .page-checkout .widget_katalog,.page-checkout .widget_katalog_line {
 	/* display:none; */
+}
+
+.widget_katalog_checkout .widget-item-list-caption{
+	background-color: white !important;
+    color: inherit !important;
 }
 
 #ppButton {
@@ -3202,4 +3298,11 @@ height:auto;
 
 .widget_katalog_box .cmp-product-thumb--grid:before {
     background-image: url(https://trinidub.de/wd/images/background_frame_white.png) !important;
+	padding: 30px 0;
+} 
+
+
+.fa-shopping-bag{
+	margin-left: 10px !important;
+	display: block;	
 }

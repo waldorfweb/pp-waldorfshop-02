@@ -34559,6 +34559,45 @@ for (var COLLECTION_NAME in DOMIterables) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/modules/web.timers.js":
+/*!****************************************************!*\
+  !*** ./node_modules/core-js/modules/web.timers.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $ = __webpack_require__(/*! ../internals/export */ "./node_modules/core-js/internals/export.js");
+var global = __webpack_require__(/*! ../internals/global */ "./node_modules/core-js/internals/global.js");
+var userAgent = __webpack_require__(/*! ../internals/engine-user-agent */ "./node_modules/core-js/internals/engine-user-agent.js");
+
+var slice = [].slice;
+var MSIE = /MSIE .\./.test(userAgent); // <- dirty ie9- check
+
+var wrap = function (scheduler) {
+  return function (handler, timeout /* , ...arguments */) {
+    var boundArgs = arguments.length > 2;
+    var args = boundArgs ? slice.call(arguments, 2) : undefined;
+    return scheduler(boundArgs ? function () {
+      // eslint-disable-next-line no-new-func
+      (typeof handler == 'function' ? handler : Function(handler)).apply(this, args);
+    } : handler, timeout);
+  };
+};
+
+// ie9- setTimeout & setInterval additional parameters fix
+// https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers
+$({ global: true, bind: true, forced: MSIE }, {
+  // `setTimeout` method
+  // https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-settimeout
+  setTimeout: wrap(global.setTimeout),
+  // `setInterval` method
+  // https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-setinterval
+  setInterval: wrap(global.setInterval)
+});
+
+
+/***/ }),
+
 /***/ "./node_modules/custom-event-polyfill/custom-event-polyfill.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/custom-event-polyfill/custom-event-polyfill.js ***!
@@ -80990,6 +81029,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_string_replace__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_replace__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var core_js_modules_es_string_split__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.string.split */ "./node_modules/core-js/modules/es.string.split.js");
 /* harmony import */ var core_js_modules_es_string_split__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_split__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_web_timers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/web.timers */ "./node_modules/core-js/modules/web.timers.js");
+/* harmony import */ var core_js_modules_web_timers__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_timers__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
@@ -81003,8 +81045,8 @@ var Tawk_API = Tawk_API || {},
   var s1 = document.createElement("script"),
       s0 = document.getElementsByTagName("script")[0];
   s1.async = true;
-  s1.src = 'https://embed.tawk.to/5de915d1d96992700fcaea9b/default'; // s1.charset = 'UTF-8';
-
+  s1.src = 'https://embed.tawk.to/5de915d1d96992700fcaea9b/default';
+  s1.charset = 'UTF-8';
   s1.setAttribute('crossorigin', '*');
   s0.parentNode.insertBefore(s1, s0);
 })(); /// Set Cookies -->
@@ -81031,9 +81073,101 @@ $(function () {}); //require(['jQuery'], function ($) {
 
 $(window).on("load", function () {
   //$().ready(function(){
+  //add weiter einkaufen button
+  function addweitereinkaufen() {
+    setTimeout(function () {
+      if ($(".weitereinkaufen").length) {//console.log('exist');
+      } else {
+        $('#add-item-to-basket-overlay .modal-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen"> <i aria-hidden="true" class="fa fa-shopping-bag"></i> weiter einkaufen </button>');
+      }
+    }, 1000);
+  }
+
+  $(".add-to-basket-container .btn").on("click", addweitereinkaufen);
+  $(".add-to-basket-lg-container").on("click", addweitereinkaufen); //Warenkorb
+  // OrderTotals find and replace - patch PMs Mehrsprachigkeit
+  // $("dt").text(function(index, text) { 
+  //     //alert('test');
+  //     var text = $(this).text();
+  //     $('dt:contains("Warenwert ((Brutto))")').text('Warenwert (Brutto)'); 
+  //     $('dt:contains("Warenwert ((Netto))")').text('Warenwert (Netto)');
+  //     $('dt:contains("Versandkosten ((Brutto))")').text('Versandkosten (Brutto)'); 
+  //     $('dt:contains("Versandkosten ((Netto))")').text('Versandkosten (Netto)');
+  //     $('dt:contains("Gesamtsumme ((Brutto))")').text('Gesamtsumme (Brutto)'); 
+  //     $('dt:contains("Gesamtsumme ((Netto))")').text('Gesamtsumme (Netto)');
+  // });
+  //Warenkorb Slidin - weiter einkaufen  
+
+  function addweitereinkaufen_cart() {
+    // OrderTotals find and replace - patch PMs Mehrsprachigkeit
+    // $("dt").text(function(index, text) { 
+    //     //alert('test');
+    //     var text = $(this).text();
+    //     $('dt:contains("Warenwert ((Brutto))")').text('Warenwert (Brutto)'); 
+    //     $('dt:contains("Warenwert ((Netto))")').text('Warenwert (Netto)');
+    //     $('dt:contains("Versandkosten ((Brutto))")').text('Versandkosten (Brutto)'); 
+    //     $('dt:contains("Versandkosten ((Netto))")').text('Versandkosten (Netto)');
+    //     $('dt:contains("Gesamtsumme ((Brutto))")').text('Gesamtsumme (Brutto)'); 
+    //     $('dt:contains("Gesamtsumme ((Netto))")').text('Gesamtsumme (Netto)');
+    // });
+    setTimeout(function () {
+      if ($(".weitereinkaufen_cart").length) {
+        //console.log('exist');
+        // Close Warenkorbpreview
+        var addweitereinkaufencc = function addweitereinkaufencc() {
+          //console.log('close first');
+          $(".open-right").show("slide", {
+            direction: "right"
+          }, 1000);
+        };
+
+        $(".weitereinkaufen_cart").on("click", addweitereinkaufencc);
+      } else {
+        // Close Warenkorbpreview
+        var _addweitereinkaufencc = function _addweitereinkaufencc() {
+          //console.log('close last');
+          $('body').removeClass('basket-open');
+          $(".open-right").show("slide", {
+            direction: "right"
+          }, 1000);
+        };
+
+        $('.basket-preview-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen weitereinkaufen_cart"> <i aria-hidden="true" class="fa fa-shopping-bag"></i> weiter einkaufen </button>');
+        $(".weitereinkaufen_cart").on("click", _addweitereinkaufencc);
+      }
+    }, 1000);
+  }
+
+  $(".toggle-basket-preview").on("click", addweitereinkaufen_cart); // $('.basket-preview-footer').append('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen"> <i aria-hidden="true" class="fa fa-shopping-bag"></i> weiter einkaufen </button>');
+  //Kategorieseite Beschreibung button
+
+  $('.widget_kat_description_2').attr('id', 'secondDesc');
+  $('.category-description').after('<a href="#secondDesc"><button type="button" data-dismiss="modal" aria-label="weiter"  class="btn btn-outline-primary btn-medium mr-2 weiterlesen"> <i aria-hidden="true" class="fa fa-chevron-right"></i> weiterlesen </button></a>'); //Artikel Bulletpoints if empty
+
+  $(".bulletpoints div p:first-child span:empty").parent().parent().parent().hide(); // Popupstore Hack
+
+  $('.popupstore a').attr('href', '#'); //$('.popupstore .thumb-content a').attr('href','#');
+  //$('.popupstore .invisible a').attr('href','#');
+
+  $('.popupstore .cmp-product-thumb').css('overflow', 'visible'); //$('.popupstore .invisible li').css('overflow','visible');
+  //$('.popupstore .d-lg-block i').replaceWith('<i class="fa fa-lg mobile-icon-right fas fa-star " style="color:#b92a38; position: absolute; right: -16px; font-size: 48px; top: -4px; z-index:10"></i>');
+  //$('.popupstore li i').replaceWith('<i class="fa fa-lg mobile-icon-right fas fa-star " style="color:#b92a38; position: absolute; right: -16px;  font-size: 36px; top: -4px; z-index:10"></i>');
+  //$('.popupstore .d-lg-block i').unwrap();
+
+  $('.popupstore li ').prepend('<i class="fa fa-lg mobile-icon-right fas fa-star " style="color:#b92a38; position: absolute; right: 0px;  font-size: 36px; top: -4px; z-index:10"></i>'); //$('.add-to-basket-lg-container i').replaceWith( "<i class='fa fa-lg mobile-icon-right fas fa-star' style='color:#b92a38'></i>" );
+  // Popupstore Hack end
   //remove canonical tag
   //$(".cano").removeClass("cano");
+
   $(".search-input ").attr("placeholder", "Suche");
+
+  if ($("html[lang='nl']").length) {
+    $(".search-input ").attr("placeholder", "Zoeken");
+  } else if ($("html[lang='en']").length) {
+    $(".search-input ").attr("placeholder", "Search");
+  } else {
+    $(".search-input ").attr("placeholder", "Suche");
+  }
 
   if ($("body").hasClass("item-10000621")) {//alert('test3');
     //alert('test4');
@@ -81051,10 +81185,20 @@ $(window).on("load", function () {
 
   $('.page-singleitem .widget_badge .badge span').css('display', 'none');
   $('.page-singleitem .widget_badge .badge span').each(function () {
+    if ($(this).text() == 'Handemade') {
+      $(this).css('display', 'block');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Handmade.png" alt="Handemade">');
+    }
+
+    if ($(this).text() == 'Demeter') {
+      $(this).css('display', 'block');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Demeter.png" alt="Demeter">');
+    }
+
     if ($(this).text() == 'Spielgut') {
       console.log('Spielgut');
       $(this).css('display', 'block');
-      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/spielgut.png" alt="Spielgut">');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/spielgut_logo.png" alt="Spielgut">');
     }
 
     if ($(this).text() == 'Werkstätten für Menschen mit Behinderung') {
@@ -81062,64 +81206,84 @@ $(window).on("load", function () {
       $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/logo_wd_werkstaetten_behindert.png" alt="Werkstätten für Menschen mit Behinderung">');
     }
 
+    if ($(this).text() == 'soziale Werkstätten') {
+      $(this).css('display', 'block');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Soziale_Werksta_tten.png" alt="Werkstätten für Menschen mit Behinderung">');
+    }
+
     if ($(this).text() == 'NEU') {
       $(this).css('display', 'block');
-      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/neu.png" alt="NEU">');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Neu.png" alt="NEU">');
     }
 
     if ($(this).text() == 'Bio') {
       $(this).css('display', 'block');
-      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/bio2.png" alt="Bio">');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Bio.png" alt="Bio">');
+    }
+
+    if ($(this).text() == 'Bio-Siegel') {
+      $(this).css('display', 'block');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Bio-EU-Siegel.jpg" alt="Bio">');
     }
 
     if ($(this).text() == 'Katalog Frühjahr `20') {
       $(this).css('display', 'block');
-      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/aktueller_katalog.png" alt="Aktueller Katalog">');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Katlaog.png" alt="Aktueller Katalog">');
+    }
+
+    if ($(this).text() == 'Katalog') {
+      $(this).css('display', 'block');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Katlaog.png" alt="Aktueller Katalog">');
     }
 
     if ($(this).text() == 'Aktueller Katalog') {
       $(this).css('display', 'block');
-      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/aktueller_katalog.png" alt="Aktueller Katalog">');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Katlaog.png" alt="Aktueller Katalog">');
     }
 
     if ($(this).text() == 'Speditionsversand') {
       $(this).css('display', 'block');
-      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/spedition2.png" alt="Speditionsversand">');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/spedition.png" alt="Speditionsversand">');
     }
 
     if ($(this).text() == 'Englisch Sprachig') {
       $(this).css('display', 'block');
-      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/union_jack.png" alt="Englisch Sprachig">');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/English.png" alt="Englisch Sprachig">');
     }
 
     if ($(this).text() == 'Made in Germany') {
       $(this).css('display', 'block');
-      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/aus_deutschland.png" alt="Made in Germany">');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Made_in_Germany.png" alt="Made in Germany">');
+    }
+
+    if ($(this).text() == 'Made in EU') {
+      $(this).css('display', 'block');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Made_in_EU.png" alt="Made in EU">');
     }
 
     if ($(this).text() == 'Sperrgut') {
       $(this).css('display', 'block');
-      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/sperrgut2.png" alt="Sperrgut">');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/sperrgut.png" alt="Sperrgut">');
     }
 
     if ($(this).text() == 'Bestseller') {
       $(this).css('display', 'block');
-      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/bestseller.png" alt="Bestseller">');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/bestseller.png" alt="Bestseller">');
     }
 
     if ($(this).text() == '1tes Jahrsiebt') {
       $(this).css('display', 'block');
-      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/1tes-Jahrsiebt.png" alt="1tes Jahrsiebt">');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Jahrsiebt_1.png" alt="1tes Jahrsiebt">');
     }
 
     if ($(this).text() == '2tes Jahrsiebt') {
       $(this).css('display', 'block');
-      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2tes-Jahrsiebt.png" alt="2tes Jahrsiebt">');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Jahrsiebt_2.png" alt="2tes Jahrsiebt">');
     }
 
     if ($(this).text() == '3tes Jahrsiebt') {
       $(this).css('display', 'block');
-      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/3tes-Jahrsiebt.png" alt="3tes Jahrsiebt">');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Jahrsiebt_3.png" alt="3tes Jahrsiebt">');
     }
   }); //Tooltip Varianten Farben
 
@@ -81151,7 +81315,7 @@ $(window).on("load", function () {
   $('img[alt="DHL"]').remove(); //$('.method-list  .icon').prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Versandicons/selbstabholer.jpg" width="100%">');
 
   $(".method-list-item[data-id='6'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/DHl_Sammelversand.png" width="100%">');
-  $(".method-list-item[data-id='20'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/DHL_Sofor-Teilung.png" width="100%">');
+  $(".method-list-item[data-id='20'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/DHL_Sofort-Teilung.png" width="100%">');
   $(".method-list-item[data-id='7'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Abholer.png" width="100%">');
   $(".method-list-item[data-id='8'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/E-Mail.png" width="100%">');
   $(".method-list-item[data-id='13'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Sperrgut.png" width="100%">');
@@ -81162,7 +81326,7 @@ $(window).on("load", function () {
   $(".method-list-item[data-id='14'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Spedition.png" width="100%">');
   $(".method-list-item[data-id='19'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Kostenloser-Versand.png" width="100%">'); //Blog
 
-  $('.top-bar .mx-0 .top-bar-items').prepend('<ul class="blog-entrypoint controls-list list-inline"><li class="list-inline-item"><a href="https://blog.waldorfshop.eu"><i class="fas fa-blog"></i><span class="telefonnummer">Blog/Ideenforum</span></a></li><li class="kundenhotline"><a href="tel:+49 8191 9369 300"><i class="fa fa-phone"></i><span class="telefonnummer"> +49 8191 9369 300</span></a></li></ul><div class="kundenhotline"></div>');
+  $('.top-bar .mx-0 .top-bar-items').prepend('<ul class="blog-entrypoint controls-list list-inline"><li class="list-inline-item"><a href="https://blog.waldorfshop.eu" target="_blank" title="Blog zum Waldorfshop"><i class="fas fa-blog"></i><span class="telefonnummer">Blog</span></a></li><li class="kundenhotline"><a href="tel:+49 8191 9369 300"><i class="fa fa-phone"></i><span class="telefonnummer"> +49 8191 9369 300</span></a></li></ul><div class="kundenhotline"></div>');
 
   if (window.location.href.indexOf("https://www.waldorfshop.eu/spielen/kaufladen/einkaufskoerbchen_4191000_6080?utm_source=newsletter&utm_medium=email&utm_campaign=Adresse%2B%C3%BCberpr%C3%BCfen#login") > -1) {
     //alert("found it");
@@ -81248,7 +81412,7 @@ $(window).on("load", function () {
   $window.trigger('scroll'); /// is in Viewport ende
   //Über Uns Sub-Navigation
 
-  $('.ueber-uns-nav').wrapInner('<div class="category-title"><a href="/ueber-uns/">Über Uns</a></div><ul><li class="nav-item"><a href="/ueber-uns/philosophie/" class="nav-link">Philosophie</a></li><li class="nav-item"><a href="/ueber-uns/unsere-durchdachte-produktauswahl/" class="nav-link">Unsere durchdachte Produktauswahl</a></li><li class="nav-item"><a href="/ueber-uns/waldorfshop-sinnorientiert-in-die-zukunft/" class="nav-link">Genussrechte - Sinnorientiert in die Zukunft</a></li><li class="nav-item active"><a href="/ueber-uns/waldorfshop-gehoert-sich-selbst/" class="nav-link">Waldorfshop2 gehört sich selbst!</a></li><li class="nav-item"><a href="/ueber-uns/ehrliche-preise/" class="nav-link">Ehrliche Preise</a></li><li class="nav-item"><a href="/ueber-uns/mitarbeiten" class="nav-link">Mitarbeiten</a></li></ul>');
+  $('.ueber-uns-nav').wrapInner('<div class="category-title"><a href="/ueber-uns/">Über Uns</a></div><ul><li class="nav-item"><a href="/ueber-uns/philosophie/" class="nav-link">Philosophie</a></li><li class="nav-item"><a href="/ueber-uns/unsere-durchdachte-produktauswahl/" class="nav-link">Unsere durchdachte Produktauswahl</a></li><li class="nav-item"><a href="/ueber-uns/waldorfshop-sinnorientiert-in-die-zukunft/" class="nav-link">Genussrechte - Sinnorientiert in die Zukunft</a></li><li class="nav-item active"><a href="/ueber-uns/waldorfshop-gehoert-sich-selbst/" class="nav-link">Waldorfshop gehört sich selbst!</a></li><li class="nav-item"><a href="/ueber-uns/ehrliche-preise/" class="nav-link">Ehrliche Preise</a></li><li class="nav-item"><a href="/ueber-uns/mitarbeiten" class="nav-link">Mitarbeiten</a></li></ul>');
   $('.ueber-uns-nav').parent().parent().parent().parent().addClass('sticky_uu_navigation');
 
   if (window.location.href.indexOf("waldorfshop-gehoert-sich-selbst") > -1) {
@@ -81282,7 +81446,7 @@ $(window).on("load", function () {
   }
 
   $('.category-3236 .ueber-uns-nav .nav-item').removeClass('active'); // Search
-  //$(".wd_search .search-shown").prepend('<div class="wd_logo"><a href="/" title="Waldorfshop2.eu" alt="waldorfshop.eu"><img alt="Waldorfshop2" src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/logo.svg"></a></div>');
+  //$(".wd_search .search-shown").prepend('<div class="wd_logo"><a href="/" title="Waldorfshop.eu" alt="waldorfshop.eu"><img alt="Waldorfshop" src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/logo.svg"></a></div>');
   //$('#page-header-parent .page-header').wrapInner('<div class="wd_searchbar"></div>');
 
   $(".upperpaginationinner").last().css("margin-bottom", "40px");
