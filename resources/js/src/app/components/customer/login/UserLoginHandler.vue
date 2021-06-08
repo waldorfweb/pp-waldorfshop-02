@@ -13,23 +13,23 @@
             </div>
         </div>
         <div v-if="!isLoggedIn">
-            <a class="nav-link" :href="isLogin ? 'javascript:void(0)' : '#login'" :data-toggle="isLogin ? false : 'modal'" @click="createLoginModal(); unmarkInputFields();">
+            <a class="nav-link" data-testing="login-select" v-if="showLogin" :href="isLogin ? 'javascript:void(0)' : '#login'" :data-toggle="isLogin ? false : 'modal'" @click="createLoginModal(); unmarkInputFields();" :aria-label="$translate('Ceres::Template.login')">
                 <i class="fa fa-user mr-1" aria-hidden="true"></i>
                 <span class="d-none d-sm-inline">{{ $translate("Ceres::Template.login") }}</span>
             </a>
-            <span class="pipe" v-if="showRegistration"></span>
-            <a class="nav-link" :href="isRegister ? 'javascript:void(0)' : '#registration'" :data-toggle="isRegister ? false : 'modal'"  @click="createRegisterModal(); unmarkInputFields();" v-if="showRegistration">
-                <i class="fa fa-user-plus mr-1" aria-hidden="true"></i>
-                <span class="d-none d-sm-inline">{{ $translate("Ceres::Template.loginRegister") }}</span>
-            </a>
+            <template v-if="showRegistration">
+                <span class="pipe" v-if="!showLogin"></span>
+                <a class="nav-link" data-testing="register-select" :href="isRegister ? 'javascript:void(0)' : '#registration'" :data-toggle="isRegister ? false : 'modal'"  @click="createRegisterModal(); unmarkInputFields();" :aria-label="$translate('Ceres::Template.loginRegister')">
+                    <i class="fa fa-user-plus mr-1" aria-hidden="true"></i>
+                    <span class="d-none d-sm-inline">{{ $translate("Ceres::Template.loginRegister") }}</span>
+                </a>
+            </template>
         </div>
     </div>
 </template>
 
 <script>
-import ApiService from "../../../../../../../node_modules/Ceres/resources/js/src/app/services/ApiService";
-import ValidationService from "../../../../../../../node_modules/Ceres/resources/js/src/app/services/ValidationService";
-import { isDefined } from "../../../../../../../node_modules/Ceres/resources/js/src/app/helper/utils";
+import ValidationService from "../../../services/ValidationService";
 import { mapGetters, mapActions } from "vuex";
 
 export default {
@@ -37,7 +37,11 @@ export default {
         showRegistration: {
             type: Boolean,
             default: true
-        }
+        },
+        showLogin: {
+            type: Boolean,
+            default: true
+        } 
     },
 
     computed: {
@@ -47,49 +51,15 @@ export default {
         ])
     },
 
-    created()
+    data()
     {
-        ApiService.get("/rest/io/customer", {}, { keepOriginalResponse: true })
-            .done(response =>
-            {
-                if (isDefined(response.data))
-                {
-                    this.$store.commit("setUserData", response.data);
-                }
-            });
-
-        this.isLogin = App.templateType === "login";
-        this.isRegister = App.templateType === "register";
-    },
-
-    /**
-     * Add the global event listener for login and logout
-     */
-    mounted()
-    {
-        this.$nextTick(() =>
-        {
-            this.addEventListeners();
-        });
+        return {
+            isLogin: App.templateType === "login",
+            isRegister: App.templateType === "register"
+        };
     },
 
     methods: {
-        /**
-         * Adds login/logout event listeners
-         */
-        addEventListeners()
-        {
-            ApiService.listen("AfterAccountAuthentication", userData =>
-            {
-                this.$store.commit("setUserData", userData.accountContact);
-            });
-
-            ApiService.listen("AfterAccountContactLogout", () =>
-            {
-                this.$store.commit("setUserData", null);
-            });
-        },
-
         unmarkInputFields()
         {
             ValidationService.unmarkAllFields($("#login"));
@@ -99,7 +69,6 @@ export default {
         createLoginModal()
         {
             this.loadComponent("login-modal");
-
         },
 
         createRegisterModal()

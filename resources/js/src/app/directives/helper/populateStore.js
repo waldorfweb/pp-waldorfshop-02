@@ -1,5 +1,5 @@
-import store from "~/app/store/index";
-import { isDefined } from "ceres/app/helper/utils";
+import { store } from "../../store/index";
+import { isDefined } from "../../helper/utils";
 import Vue from "vue";
 
 Vue.directive("populate-store", {

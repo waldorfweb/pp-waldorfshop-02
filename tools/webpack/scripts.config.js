@@ -19,25 +19,22 @@ module.exports = env =>
         },
         resolve: {
             alias: {
-                vue: "vue/dist/vue" + (env.prod ? ".min" : "") + ".js",
-                "../store/index": path.join(__dirname, "..", "..", "./resources/js/src/app/store/index"),
-                "~": path.join(__dirname, "..", "..", "./resources/js/src"),
-                ceres: path.join(__dirname, "..", "..", "node_modules/Ceres/resources/js/src")
+                vue: "vue/dist/vue" + (env.prod ? ".min" : "") + ".js"
             }
         },
         devtool: "source-map",
         module: {
             rules: [
-                // {
-                //     enforce: "pre",
-                //     test: /\.js$/,
-                //     exclude: /node_modules/,
-                //     loader: "eslint-loader",
-                //     options: {
-                //         cache: true,
-                //         fix: env.prod
-                //     }
-                // },
+                {
+                    enforce: "pre",
+                    test: /\.js$/,
+                    exclude: /node_modules/,
+                    loader: "eslint-loader",
+                    options: {
+                        cache: true,
+                        fix: env.prod
+                    }
+                },
                 {
                     test: require.resolve("jquery"),
                     use: [

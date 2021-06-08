@@ -1,8 +1,9 @@
 <template>
-    <article class="cmp cmp-product-thumb">
+    <article class="cmp cmp-product-thumb" :data-testing="item.variation.id">
         <div :class="paddingClasses" :style="paddingInlineStyles">
 
             <add-to-basket
+                    data-testing="item-add-to-basket"
                     :variation-id="item.variation.id"
                     :is-salable="!!item.filter && item.filter.isSalable"
                     :has-children="!!item.item && item.item.salableVariationCount > 1"
@@ -148,8 +149,8 @@
 
 <script>
 import { mapState } from "vuex";
-import CategoryImageCarousel from "ceres/app/components/itemList/CategoryImageCarousel.vue";
-import ItemStoreSpecial from "ceres/app/components/itemList/ItemStoreSpecial.vue";
+import CategoryImageCarousel from "./CategoryImageCarousel.vue";
+import ItemStoreSpecial from "./ItemStoreSpecial.vue";
 
 export default {
     components: {
@@ -185,6 +186,11 @@ export default {
         {
             type: String,
             default: null
+        },
+        forceUrlWithVariationId:
+        {
+            type: Boolean,
+            default: false
         }
     },
 
@@ -239,7 +245,7 @@ export default {
 
         urlWithVariationId()
         {
-            return !this.$ceres.config.item.showPleaseSelect || this.$ceres.initialPleaseSelect == 0;
+            return !this.$ceres.config.item.showPleaseSelect || this.$ceres.initialPleaseSelect == 0 || this.forceUrlWithVariationId;
         },
 
         ...mapState({

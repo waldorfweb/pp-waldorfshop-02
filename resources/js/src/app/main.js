@@ -1,11 +1,13 @@
+import { getContainingComponent } from "./helper/utils";
+
 const browserDetect = require("detect-browser");
-const NotificationService = require("ceres/app/services/NotificationService");
-const AutoFocusService = require("ceres/app/services/AutoFocusService");
+const NotificationService = require("./services/NotificationService");
+const AutoFocusService = require("./services/AutoFocusService");
 
-import { debounce } from "ceres/app/helper/debounce";
 import Vue from "vue";
-import { getStyle } from "ceres/app/helper/dom";
-
+import { getStyle } from "./helper/dom";
+import { detectPassiveEvents } from "./helper/featureDetect";
+import HeaderScroller from "./helper/HeaderScroller";
 
 // Frontend end scripts
 // eslint-disable-next-line
@@ -43,27 +45,6 @@ function CeresMain()
         $("html").addClass("unkown-os");
     }
 
-    // Detect Facebook integrated Browser
-    if (typeof navigator !== "undefined" && /FBA[NV]\/([0-9\.]+)/.test(navigator.userAgent))
-    {
-        document.body.classList.add("facebook");
-    }
-
-    $(window).scroll(function()
-    {
-        if ($(".wrapper-main").hasClass("isSticky"))
-        {
-            if ($(this).scrollTop() > 1)
-            {
-                $(".wrapper-main").addClass("sticky");
-            }
-            else
-            {
-                $(".wrapper-main").removeClass("sticky");
-            }
-        }
-    });
-
     window.onpopstate = function(event)
     {
         if (event.state && event.state.requireReload)
@@ -73,13 +54,15 @@ function CeresMain()
     };
 
     // init bootstrap tooltips
-    $("[data-toggle=\"tooltip\"]").tooltip();
+    document.querySelectorAll("[data-toggle=\"tooltip\"]").forEach(el =>
+    {
+        $(el).tooltip();
+    });
 
     HeaderCollapse("#countrySettings");
     HeaderCollapse("#currencySelect");
     HeaderCollapse("#searchBox");
 
-    // const $toggleListView = $(".toggle-list-view");
     const $mainNavbarCollapse = $("#mainNavbarCollapse");
 
     // prevent hidding collapses in the shopbuilder, for editing search bar results
@@ -134,11 +117,11 @@ function CeresMain()
             }
         });
 
-        $(window).scroll(function()
+        window.addEventListener("scroll", function()
         {
             if (isDesktop)
             {
-                if ($(this).scrollTop() > offset)
+                if ($(window).scrollTop() > offset)
                 {
                     $(".back-to-top").fadeIn(duration);
                     $(".back-to-top-center").fadeIn(duration);
@@ -149,7 +132,7 @@ function CeresMain()
                     $(".back-to-top-center").fadeOut(duration);
                 }
             }
-        });
+        }, detectPassiveEvents() ? { passive: true } : false );
 
         window.addEventListener("resize", function()
         {
@@ -182,217 +165,59 @@ function CeresMain()
         });
 
         fixPopperZIndexes();
+
+        // Emit event for Sticky Containers to update
+        $(".collapse").on("show.bs.collapse hide.bs.collapse", function()
+        {
+            this.dispatchEvent(new CustomEvent("updateStickyContainer",
+                {
+                    bubbles: true
+                }));
+        });
     });
 }
 
 window.CeresMain = new CeresMain();
 window.CeresNotification = NotificationService;
+
 const showShopNotification = function(event)
 {
     if (event.detail.type)
     {
         switch (event.detail.type)
         {
-            case "info":
-                NotificationService.info(event.detail.message);
-                break;
-            case "log":
-                NotificationService.log(event.detail.message);
-                break;
-            case "error":
-                NotificationService.error(event.detail.message);
-                break;
-            case "success":
-                NotificationService.success(event.detail.message);
-                break;
-            case "warning":
-                NotificationService.warn(event.detail.message);
-                break;
-            default:
-                console.log("no type such as:" + event.detail.type);
-                break;
+        case "info":
+            NotificationService.info(event.detail.message);
+            break;
+        case "log":
+            NotificationService.log(event.detail.message);
+            break;
+        case "error":
+            NotificationService.error(event.detail.message);
+            break;
+        case "success":
+            NotificationService.success(event.detail.message);
+            break;
+        case "warning":
+            NotificationService.warn(event.detail.message);
+            break;
+        default:
+            console.log("no type such as:" + event.detail.type);
+            break;
         }
     }
 };
 
 document.addEventListener("showShopNotification", showShopNotification);
 
-let headerParent = document.querySelector("[data-header-offset]");
-
-let headerLoaded = false;
-
-let allHeaderChildrenHeights = [];
-
-if ( headerParent )
-{
-    function calculateBodyOffset()
-    {
-        headerParent = headerParent.offsetParent ? headerParent : document.querySelector("[data-header-offset]");
-
-        if (headerLoaded && headerParent)
-        {
-            const vueApp = document.getElementById("vue-app");
-
-            let bodyOffset = 0;
-
-            for ( let i = 0; i < headerParent.children.length; i++ )
-            {
-                bodyOffset += headerParent.children[i].getBoundingClientRect().height;
-            }
-            vueApp.style.marginTop = bodyOffset + "px";
-            vueApp.style.minHeight = "calc(100vh - " + bodyOffset + "px)";
-        }
-    }
-
-    function getHeaderChildrenHeights()
-    {
-        headerParent = headerParent.offsetParent ? headerParent : document.querySelector("[data-header-offset]");
-
-        allHeaderChildrenHeights = [];
-
-        for (let i = 0; i < headerParent.children.length; i++)
-        {
-            allHeaderChildrenHeights.push(headerParent.children[i].getBoundingClientRect().height);
-        }
-    }
-
-    function scrollHeaderElements()
-    {
-        headerParent = headerParent.offsetParent ? headerParent : document.querySelector("[data-header-offset]");
-
-        if (headerLoaded && !App.isShopBuilder)
-        {
-            let absolutePos = 0;
-
-            let fixedElementsHeight = 0;
-
-            let offset = 0;
-            const scrollTop = window.pageYOffset;
-
-            let zIndex = 100;
-
-            for (let i = 0; i < headerParent.children.length; i++)
-            {
-                const elem = headerParent.children[i];
-                const elemHeight = allHeaderChildrenHeights[i];
-
-                offset = absolutePos - scrollTop;
-                elem.style.position = "absolute";
-                elem.style.zIndex = zIndex;
-                zIndex--;
-
-                if (!elem.classList.contains("unfixed"))
-                {
-                    if (offset < 0)
-                    {
-                        elem.style.top = 0;
-                    }
-                    else
-                    {
-                        elem.style.top = offset + "px";
-                    }
-
-                    if (fixedElementsHeight > 0 && offset < fixedElementsHeight)
-                    {
-                        elem.style.top = fixedElementsHeight + "px";
-                    }
-
-                    fixedElementsHeight = fixedElementsHeight + elemHeight;
-                }
-                else
-                {
-                    elem.style.top = offset + "px";
-                }
-                absolutePos = absolutePos + elemHeight;
-            }
-        }
-    }
-
-    window.addEventListener("resize", debounce(function()
-    {
-        calculateBodyOffset();
-        getHeaderChildrenHeights();
-        scrollHeaderElements();
-    }, 50));
-
-    window.addEventListener("load", function()
-    {
-        calculateBodyOffset();
-        getHeaderChildrenHeights();
-        scrollHeaderElements();
-    });
-
-    if (document.fonts)
-    {
-        document.fonts.onloadingdone = function(evt)
-        {
-            calculateBodyOffset();
-            getHeaderChildrenHeights();
-            scrollHeaderElements();
-        };
-    }
-
-    window.addEventListener("scroll", debounce(function()
-    {
-        scrollHeaderElements();
-    }, 10));
-
-    $(document).on("shopbuilder.before.viewUpdate shopbuilder.after.viewUpdate", function()
-    {
-        calculateBodyOffset();
-    });
-
-    const headerImages = headerParent.querySelectorAll("img");
-
-    Promise.all(
-        Array.prototype.slice.call(headerImages).map(function(headerImage)
-        {
-            return new Promise(function(resolve)
-            {
-                if (headerImage.complete)
-                {
-                    resolve();
-                }
-                else
-                {
-                    headerImage.onload = function()
-                    {
-                        resolve();
-                    };
-                    headerImage.onerror = function()
-                    {
-                        resolve();
-                    };
-                }
-            });
-        })
-    ).then(function()
-    {
-        // Initialize
-        headerLoaded = true;
-        getHeaderChildrenHeights();
-        scrollHeaderElements();
-        calculateBodyOffset();
-    });
-
-    calculateBodyOffset();
-}
+// fixate the header elements
+new HeaderScroller();
 
 $(document).on("shopbuilder.after.drop shopbuilder.after.widget_replace", function(event, eventData, widgetElement)
 {
-    let parent = widgetElement[1];
+    const parent = widgetElement[1];
 
-    let parentComponent = null;
-
-    while (parent)
-    {
-        if (parent.__vue__)
-        {
-            parentComponent = parent.__vue__;
-            break;
-        }
-        parent = parent.parentElement;
-    }
+    const parentComponent = getContainingComponent(parent);
 
     const compiled = Vue.compile(widgetElement[0].outerHTML, { delimiters: ["${", "}"] } );
     const component = new Vue({

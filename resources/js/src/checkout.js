@@ -1,30 +1,31 @@
 // checkout script extends category script
-import "~/base";
+import "./base";
 
-import "ceres/app/components/checkout/AcceptGtcCheck";
-import "ceres/app/components/checkout/Checkout";
-import "ceres/app/components/checkout/ContactWishInput";
-import "ceres/app/components/checkout/CustomerSignInput";
-import "ceres/app/components/checkout/PaymentProviderSelect";
-import "ceres/app/components/checkout/PlaceOrder";
-import "ceres/app/components/checkout/ShippingPrivacyHintCheck";
-import "ceres/app/components/checkout/ShippingProfileSelect";
-import "ceres/app/components/checkout/SubscribeNewsletterCheck";
+import "./app/components/checkout/AcceptGtcCheck";
+import "./app/components/checkout/Checkout";
+import "./app/components/checkout/ContactWishInput";
+import "./app/components/checkout/CustomerSignInput";
+import "./app/components/checkout/PaymentProviderSelect";
+import "./app/components/checkout/PlaceOrder";
+import "./app/components/checkout/ShippingPrivacyHintCheck";
+import "./app/components/checkout/ShippingProfileSelect";
+import "./app/components/checkout/SubscribeNewsletterCheck";
 
-import "ceres/app/components/customer/AddressSelect/AddressHeader";
-import "ceres/app/components/customer/AddressSelect/InvoiceAddressSelect";
-import "ceres/app/components/customer/AddressSelect/ShippingAddressSelect";
+import "./app/components/customer/AddressSelect/AddressHeader";
+import "./app/components/customer/AddressSelect/InvoiceAddressSelect";
+import "./app/components/customer/AddressSelect/ShippingAddressSelect";
 
-import "ceres/app/components/myAccount/AccountSettings";
-import "ceres/app/components/myAccount/BankDataSelect";
-import "ceres/app/components/myAccount/ChangePaymentMethod";
-import "ceres/app/components/myAccount/MyAccount";
-import "ceres/app/components/myAccount/OrderDocuments";
+import "./app/components/myAccount/AccountSettings";
+import "./app/components/myAccount/BankDataSelect";
+import "./app/components/myAccount/ChangePaymentMethod";
+import "./app/components/myAccount/MyAccount";
+import "./app/components/myAccount/OrderDocuments";
 
 // legacy non-shopbuilder components
-import "ceres/app/components/myAccount/History";
+import "./app/components/myAccount/History";
 
 // new shopbuilder-only component
-Vue.component("edit-coupon-overlay", () => import("ceres/app/components/myAccount/EditCouponOverlay.vue"));
-import "ceres/app/components/myAccount/OrderHistoryList";
-import "ceres/app/components/myAccount/OrderReturnHistoryList";
+import EditCouponOverlay from "./app/components/myAccount/EditCouponOverlay.vue";
+Vue.component("edit-coupon-overlay", EditCouponOverlay);
+import "./app/components/myAccount/OrderHistoryList";
+import "./app/components/myAccount/OrderReturnHistoryList";

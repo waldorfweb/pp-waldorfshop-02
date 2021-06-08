@@ -1,222 +1,27 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[6],{
 
-/***/ "./node_modules/Ceres/resources/js/src/app/components/itemList/ItemStoreSpecial.vue":
-/*!******************************************************************************************!*\
-  !*** ./node_modules/Ceres/resources/js/src/app/components/itemList/ItemStoreSpecial.vue ***!
-  \******************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _ItemStoreSpecial_vue_vue_type_template_id_9c9f35c6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ItemStoreSpecial.vue?vue&type=template&id=9c9f35c6& */ "./node_modules/Ceres/resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=template&id=9c9f35c6&");
-/* harmony import */ var _ItemStoreSpecial_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ItemStoreSpecial.vue?vue&type=script&lang=js& */ "./node_modules/Ceres/resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.function.name.js */ "./node_modules/core-js/modules/es.function.name.js");
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_string_replace_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.string.replace.js */ "./node_modules/core-js/modules/es.string.replace.js");
+/* harmony import */ var core_js_modules_es_string_replace_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_replace_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.regexp.exec.js */ "./node_modules/core-js/modules/es.regexp.exec.js");
+/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_number_to_fixed_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.number.to-fixed.js */ "./node_modules/core-js/modules/es.number.to-fixed.js");
+/* harmony import */ var core_js_modules_es_number_to_fixed_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_to_fixed_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _helper_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../helper/utils */ "./resources/js/src/app/helper/utils.js");
 
 
 
 
-
-/* normalize component */
-
-var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _ItemStoreSpecial_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _ItemStoreSpecial_vue_vue_type_template_id_9c9f35c6___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _ItemStoreSpecial_vue_vue_type_template_id_9c9f35c6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "node_modules/Ceres/resources/js/src/app/components/itemList/ItemStoreSpecial.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./node_modules/Ceres/resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************************************!*\
-  !*** ./node_modules/Ceres/resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_ItemStoreSpecial_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../vue-loader/lib??vue-loader-options!./ItemStoreSpecial.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/Ceres/resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_ItemStoreSpecial_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./node_modules/Ceres/resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=template&id=9c9f35c6&":
-/*!*************************************************************************************************************************!*\
-  !*** ./node_modules/Ceres/resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=template&id=9c9f35c6& ***!
-  \*************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_ItemStoreSpecial_vue_vue_type_template_id_9c9f35c6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../vue-loader/lib??vue-loader-options!./ItemStoreSpecial.vue?vue&type=template&id=9c9f35c6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/Ceres/resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=template&id=9c9f35c6&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_ItemStoreSpecial_vue_vue_type_template_id_9c9f35c6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_ItemStoreSpecial_vue_vue_type_template_id_9c9f35c6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue":
-/*!*************************************************************************************************!*\
-  !*** ./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue ***!
-  \*************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _LiveShoppingDetails_vue_vue_type_template_id_1ccf7aef___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LiveShoppingDetails.vue?vue&type=template&id=1ccf7aef& */ "./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=template&id=1ccf7aef&");
-/* harmony import */ var _LiveShoppingDetails_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LiveShoppingDetails.vue?vue&type=script&lang=js& */ "./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _LiveShoppingDetails_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _LiveShoppingDetails_vue_vue_type_template_id_1ccf7aef___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _LiveShoppingDetails_vue_vue_type_template_id_1ccf7aef___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************!*\
-  !*** ./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_LiveShoppingDetails_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../vue-loader/lib??vue-loader-options!./LiveShoppingDetails.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_LiveShoppingDetails_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=template&id=1ccf7aef&":
-/*!********************************************************************************************************************************!*\
-  !*** ./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=template&id=1ccf7aef& ***!
-  \********************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_LiveShoppingDetails_vue_vue_type_template_id_1ccf7aef___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../vue-loader/lib??vue-loader-options!./LiveShoppingDetails.vue?vue&type=template&id=1ccf7aef& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=template&id=1ccf7aef&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_LiveShoppingDetails_vue_vue_type_template_id_1ccf7aef___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_LiveShoppingDetails_vue_vue_type_template_id_1ccf7aef___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingItem.vue":
-/*!**********************************************************************************************!*\
-  !*** ./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingItem.vue ***!
-  \**********************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _LiveShoppingItem_vue_vue_type_template_id_5c6bf594___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LiveShoppingItem.vue?vue&type=template&id=5c6bf594& */ "./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=template&id=5c6bf594&");
-/* harmony import */ var _LiveShoppingItem_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LiveShoppingItem.vue?vue&type=script&lang=js& */ "./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _LiveShoppingItem_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _LiveShoppingItem_vue_vue_type_template_id_5c6bf594___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _LiveShoppingItem_vue_vue_type_template_id_5c6bf594___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingItem.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=script&lang=js&":
-/*!***********************************************************************************************************************!*\
-  !*** ./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_LiveShoppingItem_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../vue-loader/lib??vue-loader-options!./LiveShoppingItem.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_LiveShoppingItem_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=template&id=5c6bf594&":
-/*!*****************************************************************************************************************************!*\
-  !*** ./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=template&id=5c6bf594& ***!
-  \*****************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_LiveShoppingItem_vue_vue_type_template_id_5c6bf594___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../vue-loader/lib??vue-loader-options!./LiveShoppingItem.vue?vue&type=template&id=5c6bf594& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=template&id=5c6bf594&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_LiveShoppingItem_vue_vue_type_template_id_5c6bf594___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_LiveShoppingItem_vue_vue_type_template_id_5c6bf594___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/Ceres/resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/Ceres/resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _helper_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../helper/utils */ "./node_modules/Ceres/resources/js/src/app/helper/utils.js");
 //
 //
 //
@@ -231,183 +36,397 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
-
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  name: "item-store-special",
+  props: ["storeSpecial", "recommendedRetailPrice", "variationRetailPrice", "specialOfferPrice", "decimalCount", "bundleType", "itemType"],
+  data: function data() {
+    return {
+      tagClass: "",
+      label: "",
+      tagClasses: {
+        1: "badge-offer badge-danger",
+        2: "badge-new badge-primary",
+        3: "badge-top badge-success",
+        default: "badge-success",
+        itemBundle: "badge badge-bundle bg-info",
+        itemSet: "badge badge-dark"
+      },
+      labels: {
+        1: this.$translate("Ceres::Template.storeSpecialOffer"),
+        2: this.$translate("Ceres::Template.storeSpecialNew"),
+        3: this.$translate("Ceres::Template.storeSpecialTop")
+      }
+    };
+  },
+  computed: {
+    hasLabel: function hasLabel() {
+      return this.label && this.label !== "";
+    },
+    isBundle: function isBundle() {
+      return this.bundleType === "bundle";
+    },
+    isSet: function isSet() {
+      return this.itemType === "set";
+    }
+  },
+  created: function created() {
+    this.initializeStoreSpecial();
+  },
+  methods: {
+    initializeStoreSpecial: function initializeStoreSpecial() {
+      if (!Object(_helper_utils__WEBPACK_IMPORTED_MODULE_4__["isNullOrUndefined"])(this.storeSpecial)) {
+        this.tagClass = this.tagClasses[this.storeSpecial.id] || this.tagClasses.default;
+      } else {
+        this.tagClass = this.tagClasses.default;
+      }
 
-    name: "item-store-special",
+      this.label = this.getLabel();
+    },
+    getLabel: function getLabel() {
+      if (!Object(_helper_utils__WEBPACK_IMPORTED_MODULE_4__["isNullOrUndefined"])(this.storeSpecial) && this.storeSpecial.id === 1 && !Object(_helper_utils__WEBPACK_IMPORTED_MODULE_4__["isNullOrUndefined"])(this.recommendedRetailPrice)) {
+        return this.getPercentageSale();
+      }
 
-    props: [
-        "storeSpecial",
-        "recommendedRetailPrice",
-        "variationRetailPrice",
-        "specialOfferPrice",
-        "decimalCount",
-        "bundleType",
-        "itemType"
-    ],
+      if (Object(_helper_utils__WEBPACK_IMPORTED_MODULE_4__["isNullOrUndefined"])(this.storeSpecial)) {
+        return "";
+      }
 
-    data()
-    {
+      return this.labels[this.storeSpecial.id] || this.storeSpecial.names.name;
+    },
+    getPercentageSale: function getPercentageSale() {
+      var percent;
+
+      if (Object(_helper_utils__WEBPACK_IMPORTED_MODULE_4__["isDefined"])(this.specialOfferPrice)) {
+        percent = (1 - this.specialOfferPrice.unitPrice.value / this.variationRetailPrice.unitPrice.value) * -100;
+      } else {
+        percent = (1 - this.variationRetailPrice.unitPrice.value / this.recommendedRetailPrice.unitPrice.value) * -100;
+      }
+
+      if (percent < 0) {
+        return percent.toFixed(this.decimalCount).replace(".", App.decimalSeparator) + "%";
+      }
+
+      return "";
+    }
+  },
+  watch: {
+    storeSpecial: function storeSpecial() {
+      this.initializeStoreSpecial();
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es_number_to_fixed_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.number.to-fixed.js */ "./node_modules/core-js/modules/es.number.to-fixed.js");
+/* harmony import */ var core_js_modules_es_number_to_fixed_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_to_fixed_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_string_replace_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.string.replace.js */ "./node_modules/core-js/modules/es.string.replace.js");
+/* harmony import */ var core_js_modules_es_string_replace_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_replace_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.regexp.exec.js */ "./node_modules/core-js/modules/es.regexp.exec.js");
+/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! dayjs */ "./node_modules/dayjs/dayjs.min.js");
+/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    liveShoppingData: {
+      type: Object,
+      required: true
+    },
+    displaySettings: {
+      type: Object,
+      default: function _default() {
         return {
-            tagClass: "",
-            label: "",
-            tagClasses:
-            {
-                1: "badge-offer badge-danger",
-                2: "badge-new badge-primary",
-                3: "badge-top badge-success",
-                default: "badge-success",
-                itemBundle: "badge badge-bundle bg-info",
-                itemSet: "badge badge-dark"
-            },
-            labels:
-            {
-                1: this.$translate("Ceres::Template.storeSpecialOffer"),
-                2: this.$translate("Ceres::Template.storeSpecialNew"),
-                3: this.$translate("Ceres::Template.storeSpecialTop")
-            }
+          showCrossPrice: true,
+          showStock: true,
+          showStockProgress: true,
+          showTimer: true,
+          showTimerProgress: true
         };
+      }
     },
-
-    created()
-    {
-        this.initializeStoreSpecial();
+    prices: {
+      type: Object,
+      required: true
     },
-
-    methods:
-    {
-        initializeStoreSpecial()
-        {
-            if (!Object(_helper_utils__WEBPACK_IMPORTED_MODULE_0__["isNullOrUndefined"])(this.storeSpecial))
-            {
-                this.tagClass = this.tagClasses[this.storeSpecial.id] || this.tagClasses.default;
-            }
-            else
-            {
-                this.tagClass = this.tagClasses.default;
-            }
-
-            this.label = this.getLabel();
-        },
-
-        getLabel()
-        {
-            if (!Object(_helper_utils__WEBPACK_IMPORTED_MODULE_0__["isNullOrUndefined"])(this.storeSpecial) && this.storeSpecial.id === 1 && !Object(_helper_utils__WEBPACK_IMPORTED_MODULE_0__["isNullOrUndefined"])(this.recommendedRetailPrice))
-            {
-                return this.getPercentageSale();
-            }
-
-            if (Object(_helper_utils__WEBPACK_IMPORTED_MODULE_0__["isNullOrUndefined"])(this.storeSpecial))
-            {
-                return "";
-            }
-
-            return this.labels[this.storeSpecial.id] || this.storeSpecial.names.name;
-        },
-
-        getPercentageSale()
-        {
-            let percent;
-
-            if (Object(_helper_utils__WEBPACK_IMPORTED_MODULE_0__["isDefined"])(this.specialOfferPrice))
-            {
-                percent = (1 - this.specialOfferPrice.unitPrice.value / this.variationRetailPrice.unitPrice.value ) * -100;
-            }
-            else
-            {
-                percent = (1 - this.variationRetailPrice.unitPrice.value / this.recommendedRetailPrice.unitPrice.value ) * -100;
-            }
-
-            if (percent < 0)
-            {
-                return percent.toFixed(this.decimalCount).replace(".", App.decimalSeparator) + "%";
-            }
-
-            return "";
-        }
+    isActiveByStock: {
+      type: Boolean
     },
-
-    watch:
-    {
-        storeSpecial()
-        {
-            this.initializeStoreSpecial();
-        }
+    showNetPrices: {
+      type: Boolean
     }
-});
+  },
+  data: function data() {
+    return {
+      currentInterval: null,
+      duration: null,
+      hasClosed: null,
+      hasStarted: null,
+      itemPriceRebatePercentage: 0,
+      itemQuantityRemaining: 0,
+      momentBegin: null,
+      momentEnd: null,
+      quantitySoldPercentage: 0,
+      timePercentage: 0
+    };
+  },
+  computed: {
+    oldPriceBefore: function oldPriceBefore() {
+      return this.$translate('Ceres::Template.liveShoppingBefore', {
+        'price': '<del>' + this.prices.rrp.unitPrice.formatted + '</del>'
+      });
+    },
+    oldPriceRrp: function oldPriceRrp() {
+      return this.$translate('Ceres::Template.liveShoppingRrp', {
+        'price': '<del>' + this.prices.rrp.unitPrice.formatted + '</del>'
+      });
+    }
+  },
+  created: function created() {
+    this.initializeDataAndTimer();
+  },
+  methods: {
+    initializeDataAndTimer: function initializeDataAndTimer() {
+      var _this = this;
 
+      var momentNow = dayjs__WEBPACK_IMPORTED_MODULE_3___default()();
+      this.momentBegin = dayjs__WEBPACK_IMPORTED_MODULE_3___default.a.unix(this.liveShoppingData.liveShopping.fromTime);
+      this.momentEnd = dayjs__WEBPACK_IMPORTED_MODULE_3___default.a.unix(this.liveShoppingData.liveShopping.toTime);
+      this.hasStarted = this.momentBegin.valueOf() < momentNow.valueOf();
+      this.hasClosed = this.momentEnd.valueOf() < momentNow.valueOf();
+      this.setQuantitySoldPercentage();
+
+      if (this.hasStarted && !this.hasClosed) {
+        this.setItemPriceRebatePercentage();
+      }
+
+      clearInterval(this.currentInterval);
+      this.calculations();
+      this.currentInterval = setInterval(function () {
+        _this.calculations();
+      }, 1000);
+    },
+    setQuantitySoldPercentage: function setQuantitySoldPercentage() {
+      var data = this.liveShoppingData.liveShopping;
+      var percentage = 100 - data.quantitySold / data.quantityMax * 100;
+      this.itemQuantityRemaining = data.quantityMax - data.quantitySold;
+      this.quantitySoldPercentage = percentage.toFixed(App.config.item.storeSpecial);
+    },
+    setItemPriceRebatePercentage: function setItemPriceRebatePercentage() {
+      var specialOfferPrice = this.prices.price.price.value;
+      var defaultPrice = this.prices.rrp && this.prices.rrp.price.value || 0;
+
+      if (defaultPrice === 0) {
+        this.itemPriceRebatePercentage = 0;
+      } else {
+        var percentage = 100 - specialOfferPrice / defaultPrice * 100;
+        percentage = percentage.toFixed(App.config.item.storeSpecial);
+        percentage = percentage.replace(".", App.decimalSeparator);
+        this.itemPriceRebatePercentage = percentage;
+      }
+    },
+    calculations: function calculations() {
+      var momentNow = dayjs__WEBPACK_IMPORTED_MODULE_3___default()();
+      var fullSeconds = 0;
+      var remainSeconds = 0;
+      fullSeconds = this.momentEnd.diff(this.momentBegin, "second");
+
+      if (this.hasStarted) {
+        remainSeconds = this.momentEnd.diff(momentNow, "second");
+      } else {
+        remainSeconds = this.momentBegin.diff(momentNow, "second");
+      }
+
+      this.timePercentage = (remainSeconds / fullSeconds * 100).toFixed(App.config.item.storeSpecial);
+      this.duration = this.getDuration(remainSeconds);
+      var hasToStart = !this.hasStarted && this.momentBegin < momentNow;
+      var hasToClose = !this.hasClosed && this.momentEnd < momentNow;
+
+      if (hasToStart || hasToClose) {
+        clearInterval(this.currentInterval);
+        this.$emit("reload-offer");
+      }
+    },
+    getDuration: function getDuration(seconds) {
+      var days = Math.floor(seconds / (60 * 60 * 24));
+      seconds = seconds - days * 60 * 60 * 24;
+      var hours = Math.floor(seconds / (60 * 60));
+      seconds = seconds - hours * 60 * 60;
+      var minutes = Math.floor(seconds / 60);
+      seconds = seconds - minutes * 60;
+      return {
+        days: days,
+        hours: hours,
+        minutes: minutes,
+        seconds: seconds
+      };
+    }
+  },
+  watch: {
+    liveShoppingData: function liveShoppingData() {
+      this.initializeDataAndTimer();
+    }
+  }
+});
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! dayjs */ "./node_modules/dayjs/dayjs.min.js");
-/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_0__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var core_js_modules_es_object_freeze_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.object.freeze.js */ "./node_modules/core-js/modules/es.object.freeze.js");
+/* harmony import */ var core_js_modules_es_object_freeze_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_freeze_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.number.constructor.js */ "./node_modules/core-js/modules/es.number.constructor.js");
+/* harmony import */ var core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_number_constructor_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_parse_int_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.parse-int.js */ "./node_modules/core-js/modules/es.parse-int.js");
+/* harmony import */ var core_js_modules_es_parse_int_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_parse_int_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var _helper_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../helper/utils */ "./resources/js/src/app/helper/utils.js");
+/* harmony import */ var _LiveShoppingDetails_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./LiveShoppingDetails.vue */ "./resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue");
+/* harmony import */ var _itemList_ItemStoreSpecial_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../itemList/ItemStoreSpecial.vue */ "./resources/js/src/app/components/itemList/ItemStoreSpecial.vue");
+
+
+
 //
 //
 //
@@ -472,462 +491,177 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+var TimeEnum = Object.freeze({
+  past: 1,
+  now: 2,
+  future: 3
+});
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props:
-    {
-        liveShoppingData:
-        {
-            type: Object,
-            required: true
-        },
-
-        displaySettings:
-        {
-            type: Object,
-            default: () =>
-            {
-                return {
-                    showCrossPrice: true,
-                    showStock: true,
-                    showStockProgress: true,
-                    showTimer: true,
-                    showTimerProgress: true
-                };
-            }
-        },
-
-        prices:
-        {
-            type: Object,
-            required: true
-        },
-
-        isActiveByStock:
-        {
-            type: Boolean
-        },
-
-        showNetPrices:
-        {
-            type: Boolean
-        }
+  components: {
+    LiveShoppingDetails: _LiveShoppingDetails_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
+    ItemStoreSpecial: _itemList_ItemStoreSpecial_vue__WEBPACK_IMPORTED_MODULE_6__["default"]
+  },
+  props: {
+    liveShoppingId: {
+      type: Number,
+      required: true,
+      validator: function validator(value) {
+        return value % 1 === 0 && value >= 1 && value <= 10;
+      }
     },
+    displaySettings: {
+      type: Object
+    },
+    paddingClasses: {
+      type: String,
+      default: null
+    },
+    paddingInlineStyles: {
+      type: String,
+      default: null
+    },
+    sorting: {
+      type: String,
+      default: null
+    },
+    showNetPrices: {
+      type: Boolean
+    }
+  },
+  computed: {
+    currentOffer: function currentOffer() {
+      return this.$store.state.liveShopping.liveShoppingOffers[this._uid];
+    },
+    isActive: function isActive() {
+      return this.isActiveByTime && this.isActiveByStock;
+    },
+    isActiveByTime: function isActiveByTime() {
+      if (!Object(_helper_utils__WEBPACK_IMPORTED_MODULE_4__["isNullOrUndefined"])(this.currentOffer)) {
+        var begin = parseInt(this.currentOffer.liveShopping.fromTime) * 1000;
+        var end = parseInt(this.currentOffer.liveShopping.toTime) * 1000;
+        var now = Date.now();
+        return begin < now && now < end;
+      }
 
-    data()
-    {
+      return false;
+    },
+    isActiveByStock: function isActiveByStock() {
+      if (!Object(_helper_utils__WEBPACK_IMPORTED_MODULE_4__["isNullOrUndefined"])(this.currentOffer)) {
+        var liveShopping = this.currentOffer.liveShopping;
+        return liveShopping.quantitySold < liveShopping.quantityMax;
+      }
+
+      return false;
+    },
+    storeSpecial: function storeSpecial() {
+      if (!Object(_helper_utils__WEBPACK_IMPORTED_MODULE_4__["isNullOrUndefined"])(this.currentOffer)) {
+        if (this.isActive) {
+          return {
+            id: 1
+          };
+        }
+
+        var offerTime = this.whenIsCurrentOffer();
+        var name = "";
+
+        if (offerTime === TimeEnum.past) {
+          name = this.$translate("Ceres::Template.liveShoppingOfferClosed");
+        } else if (offerTime === TimeEnum.future) {
+          name = this.$translate("Ceres::Template.liveShoppingNextOffer");
+        } else if (offerTime === TimeEnum.now) {
+          name = this.$translate("Ceres::Template.liveShoppingOfferSoldOut");
+        }
+
         return {
-            currentInterval: null,
-            duration: null,
-            hasClosed: null,
-            hasStarted: null,
-            itemPriceRebatePercentage: 0,
-            itemQuantityRemaining: 0,
-            momentBegin: null,
-            momentEnd: null,
-            quantitySoldPercentage: 0,
-            timePercentage: 0
+          id: -1,
+          names: {
+            name: name
+          }
         };
+      }
+
+      return null;
     },
+    prices: function prices() {
+      var itemPrices = this.currentOffer.item.prices;
+      var prices = {
+        price: itemPrices.default,
+        rrp: itemPrices.rrp,
+        isRrpDefaultPrice: false
+      };
 
-    computed:
-    {
-        oldPriceBefore()
-        {
-            return this.$translate('Ceres::Template.liveShoppingBefore', {'price': '<del>' + this.prices.rrp.unitPrice.formatted + '</del>'})
-        },
+      if (!Object(_helper_utils__WEBPACK_IMPORTED_MODULE_4__["isNullOrUndefined"])(itemPrices.specialOffer)) {
+        prices.price = itemPrices.specialOffer;
+        prices.rrp = itemPrices.default || itemPrices.rrp;
+        prices.isRrpDefaultPrice = !!itemPrices.default;
+      }
 
-        oldPriceRrp()
-        {
-            return this.$translate('Ceres::Template.liveShoppingRrp', {'price': '<del>' + this.prices.rrp.unitPrice.formatted + '</del>'})
-        }
-    },
-
-    created()
-    {
-        this.initializeDataAndTimer();
-    },
-
-    methods:
-    {
-        initializeDataAndTimer()
-        {
-            const momentNow = dayjs__WEBPACK_IMPORTED_MODULE_0___default()();
-
-            this.momentBegin = dayjs__WEBPACK_IMPORTED_MODULE_0___default.a.unix(this.liveShoppingData.liveShopping.fromTime);
-            this.momentEnd = dayjs__WEBPACK_IMPORTED_MODULE_0___default.a.unix(this.liveShoppingData.liveShopping.toTime);
-            this.hasStarted = this.momentBegin.valueOf() < momentNow.valueOf();
-            this.hasClosed = this.momentEnd.valueOf() < momentNow.valueOf();
-
-            this.setQuantitySoldPercentage();
-
-            if (this.hasStarted && !this.hasClosed)
-            {
-                this.setItemPriceRebatePercentage();
-            }
-
-            clearInterval(this.currentInterval);
-
-            this.calculations();
-            this.currentInterval = setInterval(() =>
-            {
-                this.calculations();
-            }, 1000);
-        },
-
-        setQuantitySoldPercentage()
-        {
-            const data            = this.liveShoppingData.liveShopping;
-            const percentage      = 100 - data.quantitySold / data.quantityMax * 100;
-
-            this.itemQuantityRemaining = data.quantityMax - data.quantitySold;
-            this.quantitySoldPercentage = percentage.toFixed(App.config.item.storeSpecial);
-        },
-
-        setItemPriceRebatePercentage()
-        {
-            const specialOfferPrice = this.prices.price.price.value;
-            const defaultPrice      = this.prices.rrp && this.prices.rrp.price.value || 0;
-
-            if (defaultPrice === 0)
-            {
-                this.itemPriceRebatePercentage = 0;
-            }
-            else
-            {
-                let percentage          = 100 - specialOfferPrice / defaultPrice * 100;
-
-                percentage = percentage.toFixed(App.config.item.storeSpecial);
-                percentage = percentage.replace(".", App.decimalSeparator);
-
-                this.itemPriceRebatePercentage = percentage;
-            }
-
-        },
-
-        calculations()
-        {
-            const momentNow = dayjs__WEBPACK_IMPORTED_MODULE_0___default()();
-            let fullSeconds = 0;
-            let remainSeconds = 0;
-
-            fullSeconds = this.momentEnd.diff(this.momentBegin, "second");
-            if (this.hasStarted)
-            {
-                remainSeconds = this.momentEnd.diff(momentNow, "second");
-            }
-            else
-            {
-                remainSeconds = this.momentBegin.diff(momentNow, "second");
-            }
-
-            this.timePercentage = (remainSeconds / fullSeconds * 100).toFixed(App.config.item.storeSpecial);
-            this.duration = this.getDuration(remainSeconds);
-
-            const hasToStart = !this.hasStarted && this.momentBegin < momentNow;
-            const hasToClose = !this.hasClosed && this.momentEnd < momentNow;
-
-            if (hasToStart || hasToClose)
-            {
-                clearInterval(this.currentInterval);
-
-                this.$emit("reload-offer");
-            }
-        },
-
-        getDuration(seconds)
-        {
-            const days = Math.floor(seconds / (60 * 60 * 24));
-
-            seconds = seconds - (days * 60 * 60 * 24);
-
-            const hours = Math.floor(seconds / (60 * 60));
-
-            seconds = seconds - (hours * 60 * 60);
-
-            const minutes = Math.floor(seconds / 60);
-
-            seconds = seconds - (minutes * 60);
-
-            return {
-                days: days,
-                hours: hours,
-                minutes: minutes,
-                seconds: seconds
-            };
-        }
-    },
-
-    watch:
-    {
-        liveShoppingData()
-        {
-            this.initializeDataAndTimer();
-        }
+      return prices;
     }
+  },
+  mounted: function mounted() {
+    this.reloadOffer();
+  },
+  methods: {
+    whenIsCurrentOffer: function whenIsCurrentOffer() {
+      var begin = parseInt(this.currentOffer.liveShopping.fromTime) * 1000;
+      var end = parseInt(this.currentOffer.liveShopping.toTime) * 1000;
+      var now = Date.now();
+
+      if (begin < now && now > end) {
+        return TimeEnum.past;
+      }
+
+      if (begin < now && now < end) {
+        return TimeEnum.now;
+      }
+
+      return TimeEnum.future;
+    },
+    reloadOffer: function reloadOffer() {
+      this.$store.dispatch("retrieveLiveShoppingOffer", {
+        liveShoppingId: this.liveShoppingId,
+        sorting: this.sorting,
+        uid: this._uid
+      });
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/es.object.freeze.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/modules/es.object.freeze.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $ = __webpack_require__(/*! ../internals/export */ "./node_modules/core-js/internals/export.js");
+var FREEZING = __webpack_require__(/*! ../internals/freezing */ "./node_modules/core-js/internals/freezing.js");
+var fails = __webpack_require__(/*! ../internals/fails */ "./node_modules/core-js/internals/fails.js");
+var isObject = __webpack_require__(/*! ../internals/is-object */ "./node_modules/core-js/internals/is-object.js");
+var onFreeze = __webpack_require__(/*! ../internals/internal-metadata */ "./node_modules/core-js/internals/internal-metadata.js").onFreeze;
+
+var nativeFreeze = Object.freeze;
+var FAILS_ON_PRIMITIVES = fails(function () { nativeFreeze(1); });
+
+// `Object.freeze` method
+// https://tc39.es/ecma262/#sec-object.freeze
+$({ target: 'Object', stat: true, forced: FAILS_ON_PRIMITIVES, sham: !FREEZING }, {
+  freeze: function freeze(it) {
+    return nativeFreeze && isObject(it) ? nativeFreeze(onFreeze(it)) : it;
+  }
 });
 
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=script&lang=js&":
-/*!*************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
-/* harmony import */ var _helper_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../helper/utils */ "./node_modules/Ceres/resources/js/src/app/helper/utils.js");
-/* harmony import */ var _LiveShoppingDetails_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LiveShoppingDetails.vue */ "./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue");
-/* harmony import */ var _itemList_ItemStoreSpecial_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../itemList/ItemStoreSpecial.vue */ "./node_modules/Ceres/resources/js/src/app/components/itemList/ItemStoreSpecial.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-
-
-
-const TimeEnum = Object.freeze({ past: 1, now: 2, future: 3 });
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-
-    components:
-    {
-        LiveShoppingDetails: _LiveShoppingDetails_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
-        ItemStoreSpecial: _itemList_ItemStoreSpecial_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
-    },
-
-    props: {
-        liveShoppingId:
-        {
-            type: Number,
-            required: true,
-            validator: value =>
-            {
-                return value % 1 === 0 && value >= 1 && value <= 10;
-            }
-        },
-        displaySettings:
-        {
-            type: Object
-        },
-        paddingClasses:
-        {
-            type: String,
-            default: null
-        },
-        paddingInlineStyles:
-        {
-            type: String,
-            default: null
-        },
-        sorting:
-        {
-            type: String,
-            default: null
-        },
-        showNetPrices:
-        {
-            type: Boolean
-        }
-    },
-
-    computed:
-    {
-        currentOffer()
-        {
-            return this.liveShoppingOffers[this.liveShoppingId];
-        },
-
-        isActive()
-        {
-            return this.isActiveByTime && this.isActiveByStock;
-        },
-
-        isActiveByTime()
-        {
-            if (!Object(_helper_utils__WEBPACK_IMPORTED_MODULE_1__["isNullOrUndefined"])(this.currentOffer))
-            {
-                const begin = parseInt(this.currentOffer.liveShopping.fromTime) * 1000;
-                const end = parseInt(this.currentOffer.liveShopping.toTime) * 1000;
-                const now = Date.now();
-
-                return begin < now && now < end;
-            }
-
-            return false;
-        },
-
-        isActiveByStock()
-        {
-            if (!Object(_helper_utils__WEBPACK_IMPORTED_MODULE_1__["isNullOrUndefined"])(this.currentOffer))
-            {
-                const liveShopping = this.currentOffer.liveShopping;
-
-                return liveShopping.quantitySold < liveShopping.quantityMax;
-            }
-
-            return false;
-        },
-
-        storeSpecial()
-        {
-            if (!Object(_helper_utils__WEBPACK_IMPORTED_MODULE_1__["isNullOrUndefined"])(this.currentOffer))
-            {
-                if (this.isActive)
-                {
-                    return { id: 1 };
-                }
-
-                const offerTime = this.whenIsCurrentOffer();
-                let name = "";
-
-                if (offerTime === TimeEnum.past)
-                {
-                    name = this.$translate("Ceres::Template.liveShoppingOfferClosed");
-                }
-                else if (offerTime === TimeEnum.future)
-                {
-                    name = this.$translate("Ceres::Template.liveShoppingNextOffer");
-                }
-                else if (offerTime === TimeEnum.now)
-                {
-                    name = this.$translate("Ceres::Template.liveShoppingOfferSoldOut");
-                }
-
-                return { id: -1, names: { name } };
-            }
-
-            return null;
-        },
-
-        prices()
-        {
-            const itemPrices = this.currentOffer.item.prices;
-            const prices = {
-                price: itemPrices.default,
-                rrp: itemPrices.rrp,
-                isRrpDefaultPrice: false
-            };
-
-            if (!Object(_helper_utils__WEBPACK_IMPORTED_MODULE_1__["isNullOrUndefined"])(itemPrices.specialOffer))
-            {
-                prices.price = itemPrices.specialOffer;
-                prices.rrp = itemPrices.default || itemPrices.rrp;
-                prices.isRrpDefaultPrice = !!itemPrices.default;
-            }
-
-            return prices;
-        },
-
-        ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
-            liveShoppingOffers: state => state.liveShopping.liveShoppingOffers
-        })
-    },
-
-    created()
-    {
-        this.$store.dispatch("retrieveLiveShoppingOffer", { liveShoppingId: this.liveShoppingId, sorting: this.sorting });
-    },
-
-    methods:
-    {
-        whenIsCurrentOffer()
-        {
-            const begin = parseInt(this.currentOffer.liveShopping.fromTime) * 1000;
-            const end = parseInt(this.currentOffer.liveShopping.toTime) * 1000;
-            const now = Date.now();
-
-            if (begin < now && now > end)
-            {
-                return TimeEnum.past;
-            }
-
-            if (begin < now && now < end)
-            {
-                return TimeEnum.now;
-            }
-
-            return TimeEnum.future;
-        },
-
-        reloadOffer()
-        {
-            this.$store.dispatch("retrieveLiveShoppingOffer", { liveShoppingId: this.liveShoppingId, sorting: this.sorting });
-        }
-    }
-});
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/Ceres/resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=template&id=9c9f35c6&":
-/*!*******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/Ceres/resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=template&id=9c9f35c6& ***!
-  \*******************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=template&id=9410a8b2&":
+/*!************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=template&id=9410a8b2& ***!
+  \************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -939,15 +673,13 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm.label.length ||
-    _vm.bundleType === "bundle" ||
-    _vm.itemType === "set"
+  return _vm.hasLabel || _vm.isBundle || _vm.isSet
     ? _c("div", { staticClass: "special-tags p-2" }, [
-        _vm.label.length
+        _vm.hasLabel
           ? _c("span", { staticClass: "badge", class: _vm.tagClass }, [
               _vm._v("\n        " + _vm._s(_vm.label) + "\n    ")
             ])
-          : _vm.bundleType === "bundle"
+          : _vm.isBundle
           ? _c("span", { class: _vm.tagClasses.itemBundle }, [
               _vm._v(
                 "\n        " +
@@ -955,7 +687,7 @@ var render = function() {
                   "\n    "
               )
             ])
-          : _vm.itemType === "set"
+          : _vm.isSet
           ? _c("span", { class: _vm.tagClasses.itemSet }, [
               _vm._v(
                 "\n        " +
@@ -974,10 +706,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=template&id=1ccf7aef&":
-/*!**************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=template&id=1ccf7aef& ***!
-  \**************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=template&id=c760b5b6&":
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=template&id=c760b5b6& ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1489,10 +1221,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=template&id=5c6bf594&":
-/*!***********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/Ceres/resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=template&id=5c6bf594& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=template&id=3c96f6c0&":
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=template&id=3c96f6c0& ***!
+  \****************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1514,7 +1246,8 @@ var render = function() {
               "decimal-count": _vm.$ceres.config.item.storeSpecial,
               "image-url-accessor": "urlMiddle",
               "padding-classes": _vm.paddingClasses,
-              "padding-inline-styles": _vm.paddingInlineStyles
+              "padding-inline-styles": _vm.paddingInlineStyles,
+              "force-url-with-variation-id": true
             },
             scopedSlots: _vm._u(
               [
@@ -1683,6 +1416,213 @@ var render = function() {
 }
 var staticRenderFns = []
 render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./resources/js/src/app/components/itemList/ItemStoreSpecial.vue":
+/*!***********************************************************************!*\
+  !*** ./resources/js/src/app/components/itemList/ItemStoreSpecial.vue ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ItemStoreSpecial_vue_vue_type_template_id_9410a8b2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ItemStoreSpecial.vue?vue&type=template&id=9410a8b2& */ "./resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=template&id=9410a8b2&");
+/* harmony import */ var _ItemStoreSpecial_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ItemStoreSpecial.vue?vue&type=script&lang=js& */ "./resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ItemStoreSpecial_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ItemStoreSpecial_vue_vue_type_template_id_9410a8b2___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ItemStoreSpecial_vue_vue_type_template_id_9410a8b2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/src/app/components/itemList/ItemStoreSpecial.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************!*\
+  !*** ./resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemStoreSpecial_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./ItemStoreSpecial.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemStoreSpecial_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=template&id=9410a8b2&":
+/*!******************************************************************************************************!*\
+  !*** ./resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=template&id=9410a8b2& ***!
+  \******************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemStoreSpecial_vue_vue_type_template_id_9410a8b2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./ItemStoreSpecial.vue?vue&type=template&id=9410a8b2& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/app/components/itemList/ItemStoreSpecial.vue?vue&type=template&id=9410a8b2&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemStoreSpecial_vue_vue_type_template_id_9410a8b2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ItemStoreSpecial_vue_vue_type_template_id_9410a8b2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue":
+/*!******************************************************************************!*\
+  !*** ./resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LiveShoppingDetails_vue_vue_type_template_id_c760b5b6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LiveShoppingDetails.vue?vue&type=template&id=c760b5b6& */ "./resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=template&id=c760b5b6&");
+/* harmony import */ var _LiveShoppingDetails_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LiveShoppingDetails.vue?vue&type=script&lang=js& */ "./resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _LiveShoppingDetails_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _LiveShoppingDetails_vue_vue_type_template_id_c760b5b6___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _LiveShoppingDetails_vue_vue_type_template_id_c760b5b6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************!*\
+  !*** ./resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LiveShoppingDetails_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LiveShoppingDetails.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LiveShoppingDetails_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=template&id=c760b5b6&":
+/*!*************************************************************************************************************!*\
+  !*** ./resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=template&id=c760b5b6& ***!
+  \*************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LiveShoppingDetails_vue_vue_type_template_id_c760b5b6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LiveShoppingDetails.vue?vue&type=template&id=c760b5b6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/app/components/liveShopping/LiveShoppingDetails.vue?vue&type=template&id=c760b5b6&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LiveShoppingDetails_vue_vue_type_template_id_c760b5b6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LiveShoppingDetails_vue_vue_type_template_id_c760b5b6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/src/app/components/liveShopping/LiveShoppingItem.vue":
+/*!***************************************************************************!*\
+  !*** ./resources/js/src/app/components/liveShopping/LiveShoppingItem.vue ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LiveShoppingItem_vue_vue_type_template_id_3c96f6c0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LiveShoppingItem.vue?vue&type=template&id=3c96f6c0& */ "./resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=template&id=3c96f6c0&");
+/* harmony import */ var _LiveShoppingItem_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LiveShoppingItem.vue?vue&type=script&lang=js& */ "./resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _LiveShoppingItem_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _LiveShoppingItem_vue_vue_type_template_id_3c96f6c0___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _LiveShoppingItem_vue_vue_type_template_id_3c96f6c0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/src/app/components/liveShopping/LiveShoppingItem.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************!*\
+  !*** ./resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LiveShoppingItem_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LiveShoppingItem.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LiveShoppingItem_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=template&id=3c96f6c0&":
+/*!**********************************************************************************************************!*\
+  !*** ./resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=template&id=3c96f6c0& ***!
+  \**********************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LiveShoppingItem_vue_vue_type_template_id_3c96f6c0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LiveShoppingItem.vue?vue&type=template&id=3c96f6c0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/app/components/liveShopping/LiveShoppingItem.vue?vue&type=template&id=3c96f6c0&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LiveShoppingItem_vue_vue_type_template_id_3c96f6c0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LiveShoppingItem_vue_vue_type_template_id_3c96f6c0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
