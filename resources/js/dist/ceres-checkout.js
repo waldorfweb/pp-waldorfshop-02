@@ -45076,9 +45076,7 @@ var render = function() {
                 attrs: {
                   type: "search",
                   autofocus: _vm.isShopBuilder,
-                  placeholder: _vm.$translate(
-                    "Ceres::Template.headerSearchPlaceholder"
-                  ),
+                  placeholder: _vm.$translate("Ceres::Template.headerSearch"),
                   "aria-label": _vm.$translate(
                     "Ceres::Template.headerSearchTerm"
                   )

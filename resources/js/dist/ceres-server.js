@@ -52608,7 +52608,7 @@ var render = function() {
                   _vm._ssrAttr("autofocus", _vm.isShopBuilder) +
                   _vm._ssrAttr(
                     "placeholder",
-                    _vm.$translate("Ceres::Template.headerSearchPlaceholder")
+                    _vm.$translate("Ceres::Template.headerSearch")
                   ) +
                   _vm._ssrAttr(
                     "aria-label",
