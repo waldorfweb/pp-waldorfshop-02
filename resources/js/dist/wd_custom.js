@@ -655,17 +655,7 @@ $(window).on('load', function() {
     //});
     //return false;
 
-    if ($(window).width() > 576) {
-        //alert('mobile');
-    } else {}
 
-    $(".blog-extern-iframe").load("https://blog.waldorfshop.eu/blog-extern", function() {
-        if ($(this).height() > 100) {
-            $(".et_pb_image_container .be_img").prepend('.entry-title');
-            $(".entry-title").insertBefore('.et_pb_image_container .be_img');
-        }
-    });
-    return false;
 
 
 });
