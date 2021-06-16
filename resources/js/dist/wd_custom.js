@@ -1,17 +1,3 @@
-//Chat
-var Tawk_API = Tawk_API || {},
-    Tawk_LoadStart = new Date();
-(function() {
-    var s1 = document.createElement("script"),
-        s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/5de915d1d96992700fcaea9b/default';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-})();
-
-
 /// Set Cookies -->
 function setCookie(key, value, expiry) {
     var expires = new Date();
@@ -29,34 +15,25 @@ function eraseCookie(key) {
     setCookie(key, keyValue, '-1');
 }
 
-$(function() {
-
-
-
-});
-
-
-
-
 
 
 //require(['jQuery'], function ($) {
 //$(document).ready(function(){
-$(window).on("load", function(){
+$(window).on("load", function() {
     //$().ready(function(){
 
     //add weiter einkaufen button
     function addweitereinkaufen() {
-        setTimeout( function(){
-            if ( $( ".weitereinkaufen" ).length ) {
+        setTimeout(function() {
+            if ($(".weitereinkaufen").length) {
                 //console.log('exist');
-            } else{
+            } else {
                 $('#add-item-to-basket-overlay .modal-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen"> <i aria-hidden="true" class="fa fa-shopping-bag"></i> weiter einkaufen </button>');
             }
-        }  , 1000 );
+        }, 1000);
     }
-    $( ".add-to-basket-container .btn" ).on( "click", addweitereinkaufen );
-    $( ".add-to-basket-lg-container" ).on( "click", addweitereinkaufen );
+    $(".add-to-basket-container .btn").on("click", addweitereinkaufen);
+    $(".add-to-basket-lg-container").on("click", addweitereinkaufen);
 
 
     //Warenkorb
@@ -88,16 +65,16 @@ $(window).on("load", function(){
         //     $('dt:contains("Gesamtsumme ((Netto))")').text('Gesamtsumme (Netto)');
         // });
 
-        setTimeout( function(){
-            if ( $( ".weitereinkaufen_cart" ).length ) {
+        setTimeout(function() {
+            if ($(".weitereinkaufen_cart").length) {
                 //console.log('exist');
                 // Close Warenkorbpreview
                 function addweitereinkaufencc() {
                     //console.log('close first');
                     $(".open-right").show("slide", { direction: "right" }, 1000);
                 }
-                $(".weitereinkaufen_cart").on( "click", addweitereinkaufencc );
-            } else{
+                $(".weitereinkaufen_cart").on("click", addweitereinkaufencc);
+            } else {
                 $('.basket-preview-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen weitereinkaufen_cart"> <i aria-hidden="true" class="fa fa-shopping-bag"></i> weiter einkaufen </button>');
                 // Close Warenkorbpreview
                 function addweitereinkaufencc() {
@@ -105,11 +82,11 @@ $(window).on("load", function(){
                     $('body').removeClass('basket-open');
                     $(".open-right").show("slide", { direction: "right" }, 1000);
                 }
-                $(".weitereinkaufen_cart").on( "click", addweitereinkaufencc );
+                $(".weitereinkaufen_cart").on("click", addweitereinkaufencc);
             }
-        }  , 1000 );
+        }, 1000);
     }
-    $( ".toggle-basket-preview" ).on( "click", addweitereinkaufen_cart );
+    $(".toggle-basket-preview").on("click", addweitereinkaufen_cart);
 
 
 
@@ -129,10 +106,10 @@ $(window).on("load", function(){
     // Popupstore Hack
 
 
-    $('.popupstore a').attr('href','#');
+    $('.popupstore a').attr('href', '#');
     //$('.popupstore .thumb-content a').attr('href','#');
     //$('.popupstore .invisible a').attr('href','#');
-    $('.popupstore .cmp-product-thumb').css('overflow','visible');
+    $('.popupstore .cmp-product-thumb').css('overflow', 'visible');
     //$('.popupstore .invisible li').css('overflow','visible');
     //$('.popupstore .d-lg-block i').replaceWith('<i class="fa fa-lg mobile-icon-right fas fa-star " style="color:#b92a38; position: absolute; right: -16px; font-size: 48px; top: -4px; z-index:10"></i>');
     //$('.popupstore li i').replaceWith('<i class="fa fa-lg mobile-icon-right fas fa-star " style="color:#b92a38; position: absolute; right: -16px;  font-size: 36px; top: -4px; z-index:10"></i>');
@@ -163,20 +140,20 @@ $(window).on("load", function(){
 
     }
 
-    $('.normalmenu .level2').each(function(){
-        $(this).siblings( ".level1" ).addClass('navpfeil');
+    $('.normalmenu .level2').each(function() {
+        $(this).siblings(".level1").addClass('navpfeil');
     });
-    $('.megamenu .level1').each(function(){
-        $(this).siblings( ".level2" ).addClass('navpfeil');
+    $('.megamenu .level1').each(function() {
+        $(this).siblings(".level2").addClass('navpfeil');
     });
-    $('.megamenu .level2').each(function(){
-        $(this).siblings( ".level2" ).addClass('navpfeil');
+    $('.megamenu .level2').each(function() {
+        $(this).siblings(".level2").addClass('navpfeil');
     });
 
     //$('.badge').addClass('test');
 
     $('.page-singleitem .widget_badge .badge span').css('display', 'none');
-    $('.page-singleitem .widget_badge .badge span').each(function () {
+    $('.page-singleitem .widget_badge .badge span').each(function() {
 
         if ($(this).text() == 'Handemade') {
             $(this).css('display', 'block');
@@ -264,8 +241,8 @@ $(window).on("load", function(){
 
 
 
-//Tooltip Varianten Farben
-    $('.v-s-box img').attr('title', function () {
+    //Tooltip Varianten Farben
+    $('.v-s-box img').attr('title', function() {
         if (!this.title) {
             return this.alt;
         }
@@ -279,19 +256,19 @@ $(window).on("load", function(){
 
 
     //if(localStorage.getItem("close-nb") != "true"){
-//
-//		$('.top-bar.header-fw.wd_search').css('top','64px');
-//		   	$('.wd_menu.megamenu').css('top','102px');
-//	} else {
-//		$('.top-bar.header-fw.wd_search').css('top','38px');
-//	   $('.wd_menu.megamenu').css('top','82px');
-//	}
+    //
+    //		$('.top-bar.header-fw.wd_search').css('top','64px');
+    //		   	$('.wd_menu.megamenu').css('top','102px');
+    //	} else {
+    //		$('.top-bar.header-fw.wd_search').css('top','38px');
+    //	   $('.wd_menu.megamenu').css('top','82px');
+    //	}
 
 
-//	$("#close-nb").click(function(){
-//	  $('.top-bar.header-fw.wd_search').css('top','38px');
-//	   $('.wd_menu.megamenu').css('top','82px');
-//	});
+    //	$("#close-nb").click(function(){
+    //	  $('.top-bar.header-fw.wd_search').css('top','38px');
+    //	   $('.wd_menu.megamenu').css('top','82px');
+    //	});
 
 
 
@@ -301,17 +278,17 @@ $(window).on("load", function(){
     //$('#ShippingProfileID267').addClass('selbstabholericon');
     $('img[alt="DHL"]').remove();
     //$('.method-list  .icon').prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Versandicons/selbstabholer.jpg" width="100%">');
-    $(".method-list-item[data-id='6'] .icon" ).prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/DHl_Sammelversand.png" width="100%">');
-    $(".method-list-item[data-id='20'] .icon" ).prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/DHL_Sofort-Teilung.png" width="100%">');
-    $(".method-list-item[data-id='7'] .icon" ).prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Abholer.png" width="100%">');
-    $(".method-list-item[data-id='8'] .icon" ).prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/E-Mail.png" width="100%">');
-    $(".method-list-item[data-id='13'] .icon" ).prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Sperrgut.png" width="100%">');
-    $(".method-list-item[data-id='26'] .icon" ).prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Warensendung-DHL.png" width="100%">');
-    $(".method-list-item[data-id='15'] .icon" ).prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Grossbrief.png" width="100%">');
-    $(".method-list-item[data-id='18'] .icon" ).prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Dialogpost.png" width="100%">');
-    $(".method-list-item[data-id='30'] .icon" ).prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Katlaogversand.png" width="100%">');
-    $(".method-list-item[data-id='14'] .icon" ).prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Spedition.png" width="100%">');
-    $(".method-list-item[data-id='19'] .icon" ).prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Kostenloser-Versand.png" width="100%">');
+    $(".method-list-item[data-id='6'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/DHl_Sammelversand.png" width="100%">');
+    $(".method-list-item[data-id='20'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/DHL_Sofort-Teilung.png" width="100%">');
+    $(".method-list-item[data-id='7'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Abholer.png" width="100%">');
+    $(".method-list-item[data-id='8'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/E-Mail.png" width="100%">');
+    $(".method-list-item[data-id='13'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Sperrgut.png" width="100%">');
+    $(".method-list-item[data-id='26'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Warensendung-DHL.png" width="100%">');
+    $(".method-list-item[data-id='15'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Grossbrief.png" width="100%">');
+    $(".method-list-item[data-id='18'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Dialogpost.png" width="100%">');
+    $(".method-list-item[data-id='30'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Katlaogversand.png" width="100%">');
+    $(".method-list-item[data-id='14'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Spedition.png" width="100%">');
+    $(".method-list-item[data-id='19'] .icon").prepend('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/versand/Kostenloser-Versand.png" width="100%">');
     //Blog
 
 
@@ -588,8 +565,7 @@ $(window).on("load", function(){
         $('.sidebar-categories .widget-inner').wrap('<div class="collapse" id="Subkatmenu"><div class="card card-body"></div></div>');
         $('.sidebar-categories').append('');
 
-    }
-    else {
+    } else {
         //$('#referenzdetail .et_pb_column_1_4').removeClass('police');
     }
 
@@ -641,39 +617,7 @@ $(window).on("load", function(){
 
 // Document Ready End
 
-//load extern Blog from WP
 
-$(window).on('load', function() {
-
-    //$(".blog-extern-iframe").load("https://blog.waldorfshop.eu/blog-extern");
-
-    //$(".widget_slider_new").load("https://slider.waldorfshop.eu/startseite_waldorfshop.php", function() {
-    //     		$(".widget_slider_new").load("https://slider.waldorfshop.eu/startseite_waldorfshop.php", function(slider) {
-    //     				slider.stopPropagation()
-    //    if ($(this).height() > 100) {
-
-    //    }
-    //});
-    //return false;
-
-    if ($(window).width() > 576) {
-        //alert('mobile');
-    }
-    else {
-    }
-
-    $(".blog-extern-iframe").load("https://blog.waldorfshop.eu/blog-extern", function() {
-        if ($(this).height() > 100) {
-            $(".et_pb_image_container .be_img").prepend('.entry-title');
-            $(".entry-title").insertBefore('.et_pb_image_container .be_img');
-        }
-    });
-    return false;
-
-
-});
-
-//load extern Blog from WP end
 
 
 
@@ -697,6 +641,6 @@ $(document).on('click', 'a[href^="#"]', function(event) {
 
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top - 240
-        // 100 is the sticky nav height
+            // 100 is the sticky nav height
     }, 500);
 });
