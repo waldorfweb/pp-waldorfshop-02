@@ -15841,6 +15841,9 @@ width: 100%;
     font-display: optional;
 }
 
+@font-face {
+    font-display: optional;
+}
 
 html,
 body {
@@ -15854,7 +15857,7 @@ body {
     color: #616161;
     font-size: 16px;
     font-weight: 300;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Signika', Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
