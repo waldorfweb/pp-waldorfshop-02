@@ -17040,7 +17040,7 @@ img {
   max-width: 60px !important; }
 
 .widget_payment img {
-  max-width: 420px; }
+  max-width: 420px !important; }
 
 #ppButton img {
   max-width: 185px; }
@@ -17096,7 +17096,7 @@ img {
   color: inherit !important; }
 
 .widget_katalog_checkout .cmp-product-thumb:before {
-  background-image: url(https://trinidub.de/wd/images/background_frame_white.png); }
+  background-image: url(https://trinidub.de/wd/images/background_frame_white.png) !important; }
 
 /* List items */
 .widget-info .add-to-basket-lg-container:hover {
@@ -17124,6 +17124,10 @@ img {
 .page-category-content .sidebar-categories ul li.active a[href],
 .page-category-content .widget-navigation-tree ul li.active a[href] {
   color: #fff !important; }
+
+.sidebar-categories ul li.active > a,
+.widget-navigation-tree ul li.active > a {
+  background: #b92a38; }
 
 /* Genussrechte */
 .circle-wrap .circle .mask.full, .circle-wrap .circle .fill {
