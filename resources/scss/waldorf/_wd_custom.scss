@@ -3579,7 +3579,10 @@ color:#fff !important;
     transform: rotate(180deg);
 }
 
-/* Mitarbeitenseite  */
+/* Mitarbeitenseite anchorlinks */
+.mitarbeiten-ul, .mitarbeiten-ul li {
+    list-style: none; 
+}
 .mitarbeiten-ul li:before, .mitarbeiten-ul li:before {
     content: "\f054";
     font-family: FontAwesome;
