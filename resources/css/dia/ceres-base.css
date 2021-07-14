@@ -16494,7 +16494,7 @@ img {
   font-display: swap; }
 
 .icons-loading .fa {
-  visibility: hidden !important; }
+  visibility: visible !important; }
 
 /* blog */
 .fa-blog {
