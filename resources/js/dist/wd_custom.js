@@ -164,84 +164,88 @@ $(window).on("load", function() {
 
         if ($(this).text() == 'Handemade') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Handmade.png" alt="Handemade">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Handmade.png" alt="Handemade" height:100%; width:"auto">');
         }
         if ($(this).text() == 'Demeter') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Demeter.png" alt="Demeter">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Demeter.png" alt="Demeter" height:100%; width:"auto">');
         }
         if ($(this).text() == 'Spielgut') {
             console.log('Spielgut');
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/spielgut_logo.png" alt="Spielgut">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/spielgut_logo.png" alt="Spielgut" height:100%; width:"auto">');
         }
         if ($(this).text() == 'Werkstätten für Menschen mit Behinderung') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/logo_wd_werkstaetten_behindert.png" alt="Werkstätten für Menschen mit Behinderung">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/logo_wd_werkstaetten_behindert.png" alt="Werkstätten für Menschen mit Behinderung" height:100%; width:"auto">');
         }
         if ($(this).text() == 'soziale Werkstätten') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Soziale_Werksta_tten.png" alt="Werkstätten für Menschen mit Behinderung">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Soziale_Werksta_tten.png" alt="Werkstätten für Menschen mit Behinderung" height:100%; width:"auto">');
         }
         if ($(this).text() == 'NEU') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Neu.png" alt="NEU">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Neu.png" alt="NEU" height:100%; width:"auto">');
         }
         if ($(this).text() == 'Bio') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Bio.png" alt="Bio">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Bio.png" alt="Bio" height:100%; width:"auto">');
         }
         if ($(this).text() == 'Bio-Siegel') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Bio-EU-Siegel.jpg" alt="Bio">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Bio-EU-Siegel.jpg" alt="Bio" height:100%; width:"auto">');
         }
         if ($(this).text() == 'Katalog Frühjahr `20') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Katlaog.png" alt="Aktueller Katalog">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Katlaog.png" alt="Aktueller Katalog" height:100%; width:"auto">');
         }
         if ($(this).text() == 'Katalog') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Katlaog.png" alt="Aktueller Katalog">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Katlaog.png" alt="Aktueller Katalog" height:100%; width:"auto">');
         }
         if ($(this).text() == 'Aktueller Katalog') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Katlaog.png" alt="Aktueller Katalog">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Katlaog.png" alt="Aktueller Katalog" height:100%; width:"auto">');
         }
         if ($(this).text() == 'Speditionsversand') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/spedition.png" alt="Speditionsversand">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/spedition.png" alt="Speditionsversand" height:100%; width:"auto">');
         }
         if ($(this).text() == 'Englisch Sprachig') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/English.png" alt="Englisch Sprachig">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/English.png" alt="Englisch Sprachig" height:100%; width:"auto">');
         }
         if ($(this).text() == 'Made in Germany') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Made_in_Germany.png" alt="Made in Germany">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Made_in_Germany.png" alt="Made in Germany" height:100%; width:"auto">');
         }
         if ($(this).text() == 'Made in EU') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Made_in_EU.png" alt="Made in EU">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Made_in_EU.png" alt="Made in EU" height:100%; width:"auto">');
         }
         if ($(this).text() == 'Sperrgut') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/sperrgut.png" alt="Sperrgut">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/sperrgut.png" alt="Sperrgut" height:100%; width:"auto">');
         }
         if ($(this).text() == 'Bestseller') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/bestseller.png" alt="Bestseller">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/bestseller.png" alt="Bestseller" height:100%; width:"auto">');
         }
         if ($(this).text() == '1tes Jahrsiebt') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Jahrsiebt_1.png" alt="1tes Jahrsiebt">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Jahrsiebt_1.png" alt="1tes Jahrsiebt" height:100%; width:"auto">');
         }
         if ($(this).text() == '2tes Jahrsiebt') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Jahrsiebt_2.png" alt="2tes Jahrsiebt">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Jahrsiebt_2.png" alt="2tes Jahrsiebt" height:100%; width:"auto">');
         }
         if ($(this).text() == '3tes Jahrsiebt') {
             $(this).css('display', 'block');
-            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Jahrsiebt_3.png" alt="3tes Jahrsiebt">');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Jahrsiebt_3.png" alt="3tes Jahrsiebt" height:100%; width:"auto">');
+        }
+        if ($(this).text() == 'Waldorfkind') {
+            $(this).css('display', 'block');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/waldorfkind.png" alt="Waldorfkind" height:100%; width:"auto">');
         }
 
     });
