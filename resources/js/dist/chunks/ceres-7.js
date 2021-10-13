@@ -789,9 +789,9 @@ var render = function() {
                               { staticClass: "item-details__subtitle" },
                               [
                                 _vm._v(
-                                  '\n                        "' +
+                                  "\n                        " +
                                     _vm._s(_vm.item.texts.name3) +
-                                    '"\n                    '
+                                    "\n                    "
                                 )
                               ]
                             )
