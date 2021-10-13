@@ -324,6 +324,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 
 
 
@@ -763,22 +764,10 @@ var render = function() {
                     [
                       _vm._v(
                         "\n                    " +
-                          _vm._s(_vm._f("itemName")(_vm.item))
-                      ),
-                      _vm._l(_vm.item.groupedAttributes, function(attribute) {
-                        return _c("span", [
-                          _vm._v(
-                            _vm._s(
-                              _vm._f("translate")(
-                                "Ceres::Template.itemGroupedAttribute",
-                                attribute
-                              )
-                            )
-                          )
-                        ])
-                      })
-                    ],
-                    2
+                          _vm._s(_vm._f("itemName")(_vm.item)) +
+                          "\n                    "
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   !_vm.isBook
