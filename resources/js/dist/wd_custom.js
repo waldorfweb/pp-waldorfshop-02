@@ -662,16 +662,3 @@ $(function() {
     });
 
 });
-
-
-
-// scroll to anchor fix
-
-$(document).on('click', 'a[href^="#"]', function(event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - 240
-            // 100 is the sticky nav height
-    }, 500);
-});
